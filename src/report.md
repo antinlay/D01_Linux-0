@@ -19,17 +19,29 @@ Output the names of the network interfaces using a console command
            localhost     127.0.0.1
 ![p3ipDevice](../misc/images/p3ipDevice.png)
 get the ip address of the device you are working on from the DHCP server
-#### DHCP:
+#### DHCP: 
+*LFP*
+https://unix.stackexchange.com/questions/653063/what-are-lpf-and-socket-fallback-in-the-output-of-dhclient-v
+
 *DHCPREQUEST message*
 Ethernet: source=sender's MAC; destination=FF:FF:FF:FF:FF:FF
-
 IP: source=10.0.2.15; destination=255.255.255.255;[a]
-UDP: source port=67; destination port=67
+UDP: source port=68; destination port=67
 XID 0x7ad7c
+The next message to be transmitted will be a DHCPREQUEST, which will be broadcast. If no response is heard, the client will bind to its address and move to the BOUND state.
+
 
 *DHCPACK message*
 IP: source=10.0.2.15; destination=255.255.255.255;[a]
 UDP: source port=68; destination port=67
 XID 0x7ad7c
+The server sends a confirmation to the client. SRC IP: 10.0.2.15 DST IP: 255.255.255.255. The options and fields of this packet do not differ from DHCPOFFER, except for the option with the code 53 (DHCP message type) equal to 0x05, which means that this packet is a confirmation from the DHCP server.
+https://habr.com/ru/company/dsec/blog/333978/
 
-![p3ipDevice](../misc/images/p3ipDevice.png)
+*bound to 10.0.2.15 -- renewal in 37962 seconds*
+
+![p3gwIp](../misc/images/p3gwIp.png)
+default from routel
+![p3allIp](../misc/images/p3allIp.png)
+all from netstat
+
