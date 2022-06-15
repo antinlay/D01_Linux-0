@@ -44,4 +44,9 @@ https://habr.com/ru/company/dsec/blog/333978/
 default from routel
 ![p3allIp](../misc/images/p3allIp.png)
 all from netstat
-
+![p3setIP](../misc/images/p3setIP.png)
+Set static (manually set, not received from DHCP server) ip, gw, dns settings (use public DNS servers, e.g. 1.1.1.1 or 8.8.8.8)
+![p3reboot](../misc/images/p3reboot.png)
+Reboot
+![p3ping](../misc/images/p3ping.png)
+Ping to 1.1.1.1 and ya.ru
