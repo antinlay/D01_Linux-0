@@ -50,3 +50,14 @@ Set static (manually set, not received from DHCP server) ip, gw, dns settings (u
 Reboot
 ![p3ping](../misc/images/p3ping.png)
 Ping to 1.1.1.1 and ya.ru
+## Part 4. OS Update
+![p4upgrade](../misc/images/p4upgrade.png)
+Update the system packages to the latest version
+## Part 5. Using the sudo command
+![p5sudoAdmin](../misc/images/p5sudoAdmin.png)
+The main purpose of sudo is to execute a command on behalf of another user, usually from root. The point of executing a command from root is that he has elevated access rights and, using sudo, an ordinary user can perform those actions for which he does not have enough rights.
+![p5checkSudo](../misc/images/p5checkSudo.png)
+Check sudo (add passwrd admin)
+## Part 6. Installing and configuring the time service
+![p6timeSync](../misc/images/p6timeSync.png)
+sudo timedatectl set-ntp on - command for active NTPSynchronized=yes
