@@ -149,10 +149,43 @@ When a service is listening on 0.0.0.0 this means the service is listening on al
 
 ## Part 9. Installing and using the top, htop utilities
 
-!!!!!!!!!!!!!!!NOT YET!
+#### TOP: https://linux-notes.org/kak-uznat-uptime-v-linux-unix/
+![p9tnttcm](../misc/images/p9tnttcm.png)
+uptime, number of authorised users, total system load, total number of processes, cpu load, memory load
+
+![p9pidMem](../misc/images/p9pidMem.png)
+pid of the process with the highest memory usage
+
+![p9pidTime](../misc/images/p9pidTime.png)
+pid of the process taking the most CPU time
+
+#### HTOP:
+![p9pid](../misc/images/p9pid.png)
+sorted by PID
+
+![p9cpu](../misc/images/p9cpu.png)
+PERCENT_CPU
+
+![p9mem](../misc/images/p9mem.png)
+PERCENT_MEM
+
+![p9time](../misc/images/p9time.png)
+TIME
+
+![p9sshd](../misc/images/p9sshd.png)
+filtered for sshd process
+
+![p9syslog](../misc/images/p9syslog.png)
+with the syslog process found by searching
+
+![p9hostname](../misc/images/p9hostname.png)
+with hostname, clock and uptime output added
+
 
 ## Part 10. Using the fdisk utility
 https://opensource.com/article/18/9/swap-space-linux-systems
-![p8netstat](../misc/images/p8netstat.png)
-name of the hard disk, its capacity and number of sectors, and also the swap size
+![p10fdisk](../misc/images/p10fdisk.png)
+/dev/sda   Sectors= 43675648 Size= 20.8G
+Linux swap size= 4G
 https://losst.ru/nastrojka-swap-v-ubuntu-16-04
+
