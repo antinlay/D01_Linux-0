@@ -89,7 +89,7 @@ done to exit without saving the changes with command: :q!
 find command: /RASS
 
 ![p7vimReplace](../misc/images/p7vimReplace.png)
-replace command::.,$/PIDO/RASS/gi
+replace command=:.,$/PIDO/RASS/gi
 
 #### NANO: https://tecadmin.net/how-to-search-in-nano/
 ![p7nanoInstall](../misc/images/p7nanoInstall.png)
